@@ -1,6 +1,6 @@
 {
-  "name": "PostgreSQL - 13",
-  "description": "PostgreSQL 13",
+  "name": "Mariadb 10.5",
+  "description": "Mariadb 10.5",
   "arguments": [
     {
       "key": "db.username",
