@@ -1,3 +1,4 @@
+stages:
 - name: Deploy db
   steps:
   - applyAppConfig:
