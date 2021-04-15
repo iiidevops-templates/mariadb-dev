@@ -1,5 +1,5 @@
 stages:
-- name: Deploy db
+- name: Deploy--DB
   steps:
   - applyAppConfig:
       catalogTemplate: cattle-global-data:iii-dev-charts3-db
