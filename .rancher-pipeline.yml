@@ -19,7 +19,7 @@ stages:
         git.repoName: ${CICD_GIT_REPO_NAME}
         git.branch: ${CICD_GIT_BRANCH}
         git.commitID: ${CICD_GIT_COMMIT}
-    when:
-      branch:
-        include:
-          - master
+  when:
+    branch:
+      include:
+        - master
