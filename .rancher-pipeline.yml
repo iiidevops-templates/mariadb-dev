@@ -2,24 +2,22 @@ stages:
 - name: Deploy--DB
   steps:
   - applyAppConfig:
-      catalogTemplate: cattle-global-data:iii-dev-charts3-db
-      version: 0.3.0
-      name: ${CICD_GIT_REPO_NAME}-${CICD_GIT_BRANCH}-db
-      targetNamespace: ${CICD_GIT_REPO_NAME}
       answers:
-        db.type: mariadb
-        # Always true in this time
         db.gui: true
-        db.username: iiidevops
+        db.name: todo_db
         db.password: templatePassword
-        db.name: user
         db.tag: 10.5
-        # Common project info
-        git.url: ${CICD_GIT_URL}
-        git.repoName: ${CICD_GIT_REPO_NAME}
+        db.type: mariadb
+        db.username: iiidevops
         git.branch: ${CICD_GIT_BRANCH}
         git.commitID: ${CICD_GIT_COMMIT}
+        git.repoName: ${CICD_GIT_REPO_NAME}
+        git.url: ${CICD_GIT_URL}
+      catalogTemplate: cattle-global-data:iii-dev-charts3-db
+      name: ${CICD_GIT_REPO_NAME}-${CICD_GIT_BRANCH}-db
+      targetNamespace: ${CICD_GIT_REPO_NAME}
+      version: 0.3.0
   when:
     branch:
       include:
-        - master
+      - master
