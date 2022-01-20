@@ -14,7 +14,7 @@ stages:
         git.commitID: ${CICD_GIT_COMMIT}
         git.repoName: ${CICD_GIT_REPO_NAME}
         git.url: ${CICD_GIT_URL}
-		harbor.host: harbor-dev3.iiidevops.org
+        harbor.host: harbor-dev3.iiidevops.org
       catalogTemplate: cattle-global-data:iii-dev-charts3-db
       name: ${CICD_GIT_REPO_NAME}-${CICD_GIT_BRANCH}-db
       targetNamespace: ${CICD_GIT_REPO_NAME}
