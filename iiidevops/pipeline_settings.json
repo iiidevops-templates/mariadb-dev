@@ -1,6 +1,6 @@
 {
-  "name": "MariaDB 10.5 (dev)",
-  "description": "Mariadb 10.5 <a class='el-link el-link--primary' href='https://github.com/iiidevops-templates/mariadb-dev/blob/master/README.md' target='_blank'>mariadb部屬注意事項</a><hr size=1 /><b>v1.13.0</b>  <li>增加指定 harbor.host 功能",
+  "name": "MariaDB 10.5",
+  "description": "Mariadb 10.5 <a class='el-link el-link--primary' href='https://github.com/iiidevops-templates/mariadb-dev/blob/master/README.md' target='_blank'>mariadb部屬注意事項</a>",
   "arguments": [
     {
       "key": "db.username",
