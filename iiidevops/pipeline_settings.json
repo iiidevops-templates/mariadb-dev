@@ -1,6 +1,6 @@
 {
   "name": "MariaDB 10.5",
-  "description": "Mariadb 10.5 <a class='el-link el-link--primary' href='https://github.com/iiidevops-templates/mariadb-dev/blob/master/README.md' target='_blank'>mariadb部屬注意事項</a>",
+  "description": "Mariadb 10.5 <a class='el-link el-link--primary' href='https://github.com/iiidevops-templates/mariadb-dev/blob/master/README.md' target='_blank'>mariadb 部署注意事項</a>",
   "arguments": [
     {
       "key": "db.username",
