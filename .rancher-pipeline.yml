@@ -17,8 +17,8 @@ stages:
         harbor.host: harbor-dev3.iiidevops.org
         volumeMounts.nfs.enabled: false
         volumeMounts.nfs.server: 10.20.0.100
-        volumeMounts.project : ${CICD_GIT_REPO_NAME}
-        volumeMounts.uuid : fd09f2da-b212-11ec-9a09-5ed3230a7360
+        volumeMounts.project: ${CICD_GIT_REPO_NAME}
+        volumeMounts.uuid: fd09f2da-b212-11ec-9a09-5ed3230a7360
       catalogTemplate: cattle-global-data:iii-dev-charts3-db
       name: ${CICD_GIT_REPO_NAME}-${CICD_GIT_BRANCH}-db
       targetNamespace: ${CICD_GIT_REPO_NAME}
@@ -26,7 +26,7 @@ stages:
   when:
     branch:
       include:
-      - skip-master
+      - master
 - name: Deploy--Wait DB deployment
   iiidevops: deployed-environments
   steps:
@@ -48,4 +48,4 @@ stages:
   when:
     branch:
       include:
-      - skip-master
+      - master
